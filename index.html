@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RGB color game</title>
+    <style type='text/css'>
+ 	
+ 	body{
+ 	background-color:#232323;
+ 	}
+ 	.square{
+ 	 width:30%;
+ 	 background:purple;
+ 	 padding-bottom:30%;
+ 	 float:left;
+ 	 margin:1.66%;
+ 	}
+ 	#container{
+ 	margin:0 auto;
+ 	max-width:600px;
+ 	}
+ 	h1{
+ 	color:white;
+ 	}
+    
+    </style>
+  </head>
+  <h1>The Greate <span id="colorDisplay">RGB</span> Color Game</h1>
+  <body>
+  <div id="container">
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  </div>
+  </body>
+  
+  
+    <script>
+    var colors=[
+    	"rgb(255, 0, 0)  ",
+    	"rgb(255, 255, 0)  ",
+    	"rgb(0, 255, 0) ",
+    	"rgb(0, 255, 255)  ",
+    	"rgb(0, 0, 255)  ",
+    	"rgb(255, 0, 255)  "   
+    ];
+    var square=document.querySelectorAll(".square");
+    var pickedColor = colors[3];
+    var colorDisplay=document.getElementById("colorDisplay");
+    
+      
+    for(var i=0;i<square.length;i++){
+    //add initial colors to squares
+    	square[i].style.backgroundColor=colors[i];
+    	//add click linstener
+    	square[i].addEventListener("click", function(){	
+    		//grab color of picked square
+    		var clickedColor=this.style.backgroundColor;
+    		//compare color to pickedColor
+    		if(pickedColor===clickedColor){
+    			alert("Correct");
+    			//console.log(pickedColor);
+    		}else{
+    			alert("wrong!!!");
+    		}
+    	});
+    }
+    
+       
+    </script>
+    
+  </body>
+</html>
