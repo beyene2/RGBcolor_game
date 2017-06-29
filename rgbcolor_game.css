@@ -1,9 +1,13 @@
 body{
-background-color:black;
+background-color:#232323;
 }
 h1{
 color:white;
+
+text-align:center;
+background:#232323;
 }
+
 .square{
 	width:30%;
 	background-color:purple;	
@@ -16,6 +20,13 @@ color:white;
 	margin:0 auto;
 	width:600px;
 }
-span{
-	color:white;
+#stripes{
+	background-color:white;
+	height:40px;
+	width:auto;
+	text-align:center;
+	color:black;	
+}
+.selected{
+	background-color:blue;	
 }
