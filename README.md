@@ -1,2 +1,2 @@
 # RGBcolor_game
-This a simple rgb color game I am working on to practice my js skills
+This is a simple rgb color guesing game that I am working on to practice my js skills

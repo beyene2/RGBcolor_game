@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>RGB Color Guesing Game</title>
-<meta charset='utf-8'>
-<meta lang='en-us'>
-<link rel="stylesheet" type="text/css" href="rgbcolor_game.css">
-
-
+	<title>RGB Color Guessing Game</title>
+	<meta charset="utf-8" />
+	<meta name="lang" content="en-US" />
+    	<meta name="author" content="Beyene Ayenew" />
+    	<meta name="Descriptioin" content="RGB Color Guessing game" />
+	<link rel="stylesheet" type="text/css" href="rgbcolor_game.css">
 </head>
 <body>
-<h1> Best <span id='colorDisplay'>RGB</span> Color Guesing Game</h1>
-<div id="stripes">
-<button id="reset">New Colors</button>
-<span id="message"><span>
-<button id="easyBtn">Easy</button>
-<button id="hardBtn">Hard</button>
+<h1>
+	The Best
+	<br>
+	<span id="colorDisplay">RGB</span>
+	<br>Color Guessing Game
+</h1>
+
+<div id="stripe">
+	<button id="reset">New Colors</button>
+	<span id="message"></span>
+	<button class="mode">Easy</button>
+	<button class="mode selected">Hard</button>
 </div>
 
 <div id="container">
-<div class="square"></div>
-<div class="square"></div>
-<div class="square"></div>
-<div class="square"></div>
-<div class="square"></div>
-<div class="square"></div>
-
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
 </div>
 
-<script src="rgbcolor_game.js"> </script>
+<script type="text/javascript" src="rgbcolor_game.js"></script>
 </body>
 </html>
