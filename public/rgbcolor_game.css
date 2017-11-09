@@ -44,6 +44,7 @@ h1 {
 #stripe {
 	background: white;
 	height: 30px;
+	max-width: auto;
 	text-align: center;
 	color: black;
 }
