@@ -32,7 +32,7 @@ var modeButtons=document.querySelectorAll(".mode");
 		pickedColor=pickColor();
 		//change colorDisplay to match picked color
 		colorDisplay.textContent=pickedColor;
-		resetButton.textContent = "New Colors";
+		resetButton.textContent = "Reset";
 		messageDisplay.textContent = "";
 		//change color of squares
 		for(var i=0; i < squares.length; i++){
@@ -64,7 +64,7 @@ var modeButtons=document.querySelectorAll(".mode");
 			
 			if(clickedColor===pickedColor){
 				messageDisplay.textContent = "Correct!";
-				resetButton.textContent = "Play Again?";
+				resetButton.textContent = "Play";
 				changeColors(clickedColor);
 				h1.style.backgroundColor=clickedColor;	
 			}else{
