@@ -23,7 +23,7 @@ body {
 
 h1 {
 	text-align: center;
-	line-height: 1.1;
+	line-height: 1.0;
 	font-weight: normal;
 	color: white;
 	background: steelblue;
@@ -33,7 +33,7 @@ h1 {
 }
 
 #colorDisplay {
-	font-size: 200%;
+	font-size: 100%;
 }
 
 #message {
